@@ -1,6 +1,6 @@
 import React from 'react';
 
-// 1. 宣告網頁作業清單（已加入技術標籤 tags、codeUrl 原始碼網址，並移除了已上線狀態）
+// 1. 宣告網頁作業清單（已將 Weather App 移至最後，並修正所有實體網址連結）
 const myProjects = [
   {
     id: 1,
@@ -8,35 +8,35 @@ const myProjects = [
     description: "功能完備的單字卡學習系統，支援字庫管理、收藏單字、核心測驗與拼字輸入練習。",
     tags: ["React", "CSS Grid", "Local Storage"],
     imageUrl: "./English.jpg", 
-    projectUrl: "https://5b2g0901.github.io/WordPulse-5b2g0901/ ", // 👈 換成網頁點擊網址
-    codeUrl: "https://github.com/5b2g0901/WordPulse-5b2g0901.git"     // 👈 換成 GitHub Code 網址
+    projectUrl: "https://5b2g0901.github.io/WordPulse-5b2g0901/", 
+    codeUrl: "https://github.com/5b2g0901/WordPulse-5b2g0901"
   },
   {
     id: 2,
-    title: "2. 即時天氣查詢應用 - Weather App",
-    description: "串接天氣 API 獲取即時氣象資訊，具備簡潔直覺的介面與流暢的數據動態展示。",
-    tags: ["Fetch API", "JavaScript", "CSS"],
-    imageUrl: "./Weather.jpg", 
-    projectUrl: "https://tên-user.github.io/Weather-App/",
-    codeUrl: "https://github.com/5b2g0901/WeatherApp.git"
+    title: "2. 經典踩地雷遊戲 - MineSweeper",
+    description: "網頁版經典踩地雷，包含完善的邏輯演算法、旗幟標記功能與勝負判定機制。",
+    tags: ["Algorithm", "Game Logic", "JavaScript"],
+    imageUrl: "./MineSweeper.jpg",
+    projectUrl: "https://5b2g0901.github.io/2026_WATERPUZZLE-1/mine.html", 
+    codeUrl: "https://github.com/5b2g0901/2026_WATERPUZZLE-1/blob/main/mine.html" 
   },
   {
     id: 3,
-    title: "3. 經典踩地雷遊戲 - MineSweeper",
-    description: "網頁版經典踩地雷，包含完善的邏輯演算法、旗幟標記功能與勝負判定機制。",
-    tags: ["Algorithm", "Game Logic", "React"],
-    imageUrl: "./MineSweeper.jpg",
-    projectUrl: "https://tên-user.github.io/MineSweeper/",
-    codeUrl: "https://github.com/5b2g0901/2026MineSeeps.git"
+    title: "3. 倒水益智遊戲 - WATER PUZZLE",
+    description: "趣味十足的益智倒水解謎遊戲，挑戰杯子之間的液體分配邏輯與關卡設計。",
+    tags: ["Logic Puzzle", "UI/UX", "JavaScript"],
+    imageUrl: "./WaterPuzzle.jpg",
+    projectUrl: "https://5b2g0901.github.io/2026_WATERPUZZLE-1/WaterPuzzle.html", 
+    codeUrl: "https://github.com/5b2g0901/2026_WATERPUZZLE-1/blob/main/WaterPuzzle.html" 
   },
   {
     id: 4,
-    title: "4. 倒水益智遊戲 - WATER PUZZLE",
-    description: "趣味十足的益智倒水解謎遊戲，挑戰杯子之間的液體分配邏輯與關卡設計。",
-    tags: ["Logic Puzzle", "UI/UX", "State Management"],
-    imageUrl: "./WaterPuzzle.jpg",
-    projectUrl: "https://tên-user.github.io/Water-Puzzle/",
-    codeUrl: "https://github.com/5b2g0901/2026_WATERPUZZLE.git"
+    title: "4. 即時天氣查詢應用 - Weather App", // 👈 Đã chuyển Weather App xuống vị trí cuối cùng
+    description: "串接天氣 API 獲取即時氣象資訊，具備簡潔直覺的介面與流暢的數據動態展示。",
+    tags: ["Fetch API", "JavaScript", "CSS"],
+    imageUrl: "./Weather.jpg", 
+    projectUrl: "https://5b2g0901.github.io/WeatherApp/", // 👈 Link chạy bằng gh-pages chuẩn không bị trắng
+    codeUrl: "https://github.com/5b2g0901/WeatherApp/tree/week03"
   }
 ];
 
