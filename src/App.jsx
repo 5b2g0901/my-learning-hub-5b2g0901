@@ -1,49 +1,49 @@
 import React from 'react';
 
-// 1. 宣告網頁作業清單（已修正圖片路徑、連結與作品 5 的敘述）
+// 1. 宣告網頁作業清單（已加入技術標籤 tags、codeUrl 原始碼網址，並移除了已上線狀態）
 const myProjects = [
   {
     id: 1,
-    title: "1. WordPulse",
+    title: "1. 英文單字學習應用 - WordPulse",
     description: "功能完備的單字卡學習系統，支援字庫管理、收藏單字、核心測驗與拼字輸入練習。",
     tags: ["React", "CSS Grid", "Local Storage"],
-    imageUrl: "/English.jpg", 
-    projectUrl: "https://5b2g0901.github.io/WordPulse-5b2g0901/", 
-    codeUrl: "https://github.com/5b2g0901/WordPulse-5b2g0901"
+    imageUrl: "./English.jpg", 
+    projectUrl: "https://5b2g0901.github.io/WordPulse-5b2g0901/", // 👈 換成網頁點擊網址
+    codeUrl: "https://github.com/5b2g0901/WordPulse-5b2g0901.git"     // 👈 換成 GitHub Code 網址
   },
   {
     id: 2,
     title: "2. MineSweeper",
     description: "網頁版經典踩地雷，包含完善的邏輯演算法、旗幟標記功能與勝負判定機制。",
-    tags: ["Algorithm", "Game Logic", "JavaScript"],
-    imageUrl: "/MineSweeper.jpg", 
-    projectUrl: "https://5b2g0901.github.io/2026MineSeeps/", 
-    codeUrl: "https://github.com/5b2g0901/2026_WATERPUZZLE-1/blob/main/mine.html" 
+    tags: ["Algorithm", "Game Logic", "React"],
+    imageUrl: "./MineSweeper.jpg",
+    projectUrl: "https://5b2g0901.github.io/2026MineSeeps/",
+    codeUrl: "https://github.com/5b2g0901/2026MineSeeps.git"
   },
   {
     id: 3,
     title: "3. WATER PUZZLE",
     description: "趣味十足的益智倒水解謎遊戲，挑戰杯子之間的液體分配邏輯與關卡設計。",
-    tags: ["Logic Puzzle", "UI/UX", "JavaScript"],
-    imageUrl: "/WaterPuzzle.jpg", 
-    projectUrl: "https://5b2g0901.github.io/2026_WATERPUZZLE/", 
-    codeUrl: "https://github.com/5b2g0901/2026_WATERPUZZLE-1/blob/main/WaterPuzzle.html" 
+    tags: ["Logic Puzzle", "UI/UX", "State Management"],
+    imageUrl: "./WaterPuzzle.jpg",
+    projectUrl: "https://5b2g0901.github.io/2026_WATERPUZZLE/",
+    codeUrl: "https://github.com/5b2g0901/2026_WATERPUZZLE.git"
   },
   {
     id: 4,
     title: "4. Weather App",
     description: "串接天氣 API 獲取即時氣象資訊，具備簡潔直覺的介面與流暢的數據動態展示。",
     tags: ["Fetch API", "JavaScript", "CSS"],
-    imageUrl: "/Weather.jpg", 
+    imageUrl: "./Weather.jpg", 
     projectUrl: "https://5b2g0901.github.io/WeatherApp/", 
-    codeUrl: "https://github.com/5b2g0901/WeatherApp/tree/week03"
+    codeUrl: "https://github.com/5b2g0901/WeatherApp.git"
   },
   {
     id: 5,
     title: "5. AboutMe", 
     description: "本學期的網頁設計作業整合報告首頁，展示所有精心製作的 JavaScript 與 React 專案成果。", 
     tags: ["React", "Portfolio", "RWD"], 
-    imageUrl: "/cat.jpg", 
+    imageUrl: "./Weather.jpg", 
     projectUrl: "https://5b2g0901.github.io/AboutMe-5b2g0901/",
     codeUrl: "https://github.com/5b2g0901/AboutMe-5b2g0901.git"
   },
@@ -52,8 +52,8 @@ const myProjects = [
     title: "6. Course-Syllabus", 
     description: "本學期的網頁設計作業整合報告首頁，展示所有精心製作的 JavaScript 與 React 專案成果。", 
     tags: ["React", "Portfolio", "RWD"], 
-    imageUrl: "/Java.png", 
-    projectUrl: "https://5b2g0901.github.io/Course-Syllabus/", // 💡 Đã xóa khoảng trắng thừa ở đầu link này
+    imageUrl: "./Weather.jpg", 
+    projectUrl: "https://5b2g0901.github.io/Course-Syllabus/",
     codeUrl: "https://github.com/5b2g0901/Course-Syllabus.git"
   }
 ];
@@ -92,7 +92,7 @@ function App() {
       </div>
 
       {/* 網頁大標題 */}
-      <header style={{ textShadow: "none", textAlign: "center", marginBottom: "50px" }}>
+      <header style={{ textAlign: "center", marginBottom: "50px" }}>
         <h1 style={{ 
           fontSize: "36px", 
           fontWeight: "900", 
@@ -217,7 +217,7 @@ function App() {
       </main>
 
       {/* 頁尾 */}
-      <footer style={{ textShadow: "none", textAlign: "center", marginTop: "60px", color: "#64748b", fontWeight: "700", fontSize: "14px" }}>
+      <footer style={{ textAlign: "center", marginTop: "60px", color: "#64748b", fontWeight: "700", fontSize: "14px" }}>
         <p>© 2026 Created by 5b2g0901. All Rights Reserved.</p>
       </footer>
 
